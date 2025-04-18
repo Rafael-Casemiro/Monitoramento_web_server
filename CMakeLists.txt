@@ -35,7 +35,10 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Monitoramento_web_server Monitoramento_web_server.c )
+add_executable(Monitoramento_web_server Monitoramento_web_server.c 
+        src/iniciar_botao.c
+        src/monitorar_temp.c
+)
 
 pico_set_program_name(Monitoramento_web_server "Monitoramento_web_server")
 pico_set_program_version(Monitoramento_web_server "0.1")
@@ -55,6 +58,8 @@ target_link_libraries(Monitoramento_web_server
 # Add the standard include files to the build
 target_include_directories(Monitoramento_web_server PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
+        ${CMAKE_CURRENT_LIST_DIR}/include
+        ${CMAKE_CURRENT_LIST_DIR}/src
         ${PICO_SDK_PATH}/lib/lwip/src/include
         ${PICO_SDK_PATH}/lib/lwip/src/include/arch
         ${PICO_SDK_PATH}/lib/lwip/src/include/lwip
