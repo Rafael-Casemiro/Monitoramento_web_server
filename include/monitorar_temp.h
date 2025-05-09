@@ -1,9 +1,11 @@
-#ifndef TEMPERATURA_H
+#ifndef TEMPERATURA_H // Guardas de inclusão
 #define TEMPERATURA_H
 
-extern char mensagem_temperatura[50];
 
+// Configura o sensor de temperatura
 void iniciar_temp();
+
+// Monitora a temperatura
 float monitorar_temp();
 
 #endif
