@@ -11,8 +11,8 @@
 #include "monitorar_temp.h" // Arquivo para configuração de temperatura
 
 // Configuração da rede Wi-Fi
-#define WIFI_SSID "RAFAEL"
-#define WIFI_PASSWORD "rafael120905!"
+#define WIFI_SSID "<nome_da_sua_rede"
+#define WIFI_PASSWORD "<senha_da_sua_rede"
 
 // Buffer para resposta HTTP
 char resposta_http[1024];
